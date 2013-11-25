@@ -1,5 +1,5 @@
 name    'counsyl-nginx'
-version '0.4.0'
+version '0.5.0'
 source  'git://github.counsyl.com/dev/puppet-nginx.git'
 author  'Counsyl, Inc.'
 license 'Apache License, Version 2.0'

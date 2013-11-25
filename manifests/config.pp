@@ -34,7 +34,7 @@ class nginx::config(
   } elsif ( $content and $template) {
     fail("Cannot provide both content and a template for the nginx configuration file.\n")
   } elsif (! $content and ! $source and ! $template) {
-    fail("Must provide either, content, source, or a template parameter the nginx configuration file.\n")
+    fail("Must provide either, content, source, or a template parameter for the nginx configuration file.\n")
   }
 
   # Render content if template was provided.
