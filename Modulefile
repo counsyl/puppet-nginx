@@ -1,0 +1,10 @@
+name    'counsyl-nginx'
+version '0.4.0'
+source  'git://github.counsyl.com/dev/puppet-nginx.git'
+author  'Counsyl, Inc.'
+license 'Apache License, Version 2.0'
+summary 'Installs the Nginx web server'
+description 'Installs the Nginx web server'
+project_page 'https://github.counsyl.com/dev/puppet-nginx'
+
+dependency 'counsyl/sys', '>= 0.9.5'
