@@ -28,7 +28,7 @@
 class nginx(
   $ensure         = 'present',
   $package        = $nginx::params::package,
-  $version        = undef,
+  $version        = 'installed',
   $service        = $nginx::params::service,
   $service_enable = true,
   $service_ensure = 'running',
@@ -36,11 +36,7 @@ class nginx(
   # Determine the ensure value for the package.
   case $ensure {
     'present', 'installed': {
-      if $version {
-        $package_ensure = $version
-      } else {
-        $package_ensure = 'installed'
-      }
+      $package_ensure = $version
     }
     'absent', 'uninstalled': {
       $package_ensure = 'absent'
