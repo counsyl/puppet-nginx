@@ -14,6 +14,21 @@ class may be used:
 
 ```puppet
 class { 'nginx::config':
-   source => 'puppet:///modules/counsyl/nginx/nginx.conf',
+   source => 'puppet:///modules/pyapp/nginx/nginx.conf',
 }
 ```
+
+License
+-------
+
+Apache License, Version 2.0
+
+Contact
+-------
+
+Justin Bronn <justin@counsyl.com>
+
+Support
+-------
+
+Please log tickets and issues at https://github.com/counsyl/puppet-nginx
